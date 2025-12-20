@@ -1,0 +1,56 @@
+PROMPT 1:
+
+What I asked:
+"it's good but can you make the GUI more similar to the real online Poker game? like shows actual cards, make sound effects,...
+
+How I used the output:
+ChatGPT generated a full Swing GUI class (VideoPokerGUI) that uses my existing
+Card, Deck, Player, and Game.checkHand() logic. The code added JToggleButtons
+for each card, buttons for DEAL / DRAW / MAX BET / RESET, a green table
+background, and support for loading PNG images from a cards directory. I
+copied this class into my project. I found a 
+website from which I screen shotted Imaged of 52 cards. 
+adjusted the image filenames to match my
+own card art.
+
+Challenges:
+The first versions had some small issues with the file paths for the images
+and with the enable/disable state of the card buttons. I had to test in Codio,
+check which images were missing, and tweak the getImagePathForCard() method
+so that it exactly matched my naming scheme ("10H.png", "QC.png", etc.). I also
+found out that Codio doesn't play sounds. 
+
+
+PROMPT 2:
+
+What I asked:
+"because this is a new codio project, do I need to copy all the poker game files into it ?"
+
+How I used the output:
+ChatGPT explained that the GUI needed to use the exact same Card, Deck,
+Player, and Game classes from my previous homework, so everything had to live
+in the same Codio workspace. It also gave me a simple an explanation
+for compiling all .java files with 'javac *.java' and running 'java
+VideoPokerGUI' after opening the Box URL.
+
+Challenges:
+Most of the difficulty here was the fact that Chatgpt sometimes didn't know how Codio actually worked so I did 
+have to do some research of my own (On google, reddit, etc...). 
+
+
+PROMPT 3:
+
+What I asked:
+"the code is great but i don't like how after selecting the cards it
+says you won without showing the newly dealt cards could you make it so that 
+if you win something it shows you the new cards because it's currently kind of confusing"
+
+How I used the output:
+ChatGPT updated the drawCards() method to remove this white "sheet" it was outputting over 
+the cards so that you could see them. 
+
+Challenges:
+At first, it Chatgpt changed my original game logic and broke the entire code. But after 
+a few tries I got it to write the correct code. 
+
+
