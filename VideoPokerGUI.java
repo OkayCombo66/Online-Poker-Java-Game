@@ -128,7 +128,7 @@ public class VideoPokerGUI extends JFrame {
     private void layoutComponents() {
         setLayout(new BorderLayout(10, 10));
 
-        // ---- TOP PANEL (title + bankroll + bet) ----
+        // TOP PANEL (title + bankroll + bet) 
         JPanel topPanel = new JPanel(new BorderLayout());
         topPanel.setOpaque(false);
 
@@ -149,7 +149,7 @@ public class VideoPokerGUI extends JFrame {
         topPanel.add(infoPanel, BorderLayout.SOUTH);
         add(topPanel, BorderLayout.NORTH);
 
-        // ---- CENTER PANEL (cards) ----
+        //CENTER PANEL (cards) 
         JPanel centerPanel = new JPanel();
         centerPanel.setOpaque(false);
         centerPanel.setLayout(new BoxLayout(centerPanel, BoxLayout.Y_AXIS));
@@ -170,7 +170,7 @@ public class VideoPokerGUI extends JFrame {
 
         add(centerPanel, BorderLayout.CENTER);
 
-        // ---- BOTTOM PANEL (buttons + message) ----
+        // BOTTOM PANEL (buttons + message)
         JPanel bottomPanel = new JPanel();
         bottomPanel.setOpaque(false);
         bottomPanel.setLayout(new BorderLayout());
@@ -440,7 +440,7 @@ public class VideoPokerGUI extends JFrame {
         else return 0;
     }
 
-    // ---------- IMAGE LOADING ----------
+    // IMAGE LOADING 
 
     private ImageIcon loadCardIcon(Card c) {
         String path = getImagePathForCard(c);
@@ -487,7 +487,7 @@ public class VideoPokerGUI extends JFrame {
         return "cards/" + rankStr + suitStr + ".png";
     }
 
-    // ---------- SOUND LOADING (optional) ----------
+    // SOUND LOADING (optional) 
 
     private void playSound(String path) {
         File f = new File(path);
